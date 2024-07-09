@@ -17,21 +17,6 @@
 ### 七.自动查询红包池红包🧧详情  ###
 ### 八.新增github action 脚本，无服务器等设备推荐使用 ###
 # #
-# github action 版本兼容腾讯云函数 #
-###  action版本部署方式与下方原教程不变。若需部署在腾讯云上，只需在腾讯云新增环境变量和设置触发cron 定时计划即可，腾讯云函数环境变量如下，共十三个环境变量，具体解释参考action的配置文件action.yml。具体操作如下图 ###
-[![image.png](https://img30.360buyimg.com/pop/jfs/t1/211226/34/6434/249717/6174deddEb3d7f099/1df31eaf73bdffec.png)](https://img30.360buyimg.com/pop/jfs/t1/211226/34/6434/249717/6174deddEb3d7f099/1df31eaf73bdffec.png)
-
-[![image.png](https://img30.360buyimg.com/pop/jfs/t1/16729/37/19210/131710/6174dfc1Edcf146de/ad28e3faa050990b.png)](https://img30.360buyimg.com/pop/jfs/t1/16729/37/19210/131710/6174dfc1Edcf146de/ad28e3faa050990b.png)
-###  在代码编辑区将原本所有代码覆盖为action版本中代码，再在最后新增下图主函数段即可  ###
-[![image.png](https://img30.360buyimg.com/pop/jfs/t1/156025/23/21443/385889/6174f484E701c53eb/8890227961e10dc7.png)](https://img30.360buyimg.com/pop/jfs/t1/156025/23/21443/385889/6174f484E701c53eb/8890227961e10dc7.png)
-### 最后滚动网页到代码编辑区下方，点击代码区下方的测试即可，如下图 ,后续脚本会在定时时间段运行 ###
-[![image.png](https://img30.360buyimg.com/pop/jfs/t1/199247/38/14388/410504/6174f6abE86bc8280/0d377fd6b27706de.png)](https://img30.360buyimg.com/pop/jfs/t1/199247/38/14388/410504/6174f6abE86bc8280/0d377fd6b27706de.png)
-
-# #
-## 新增控制执行红包豆兑换必中符的条件 ##
-### 如下图所示，只有在红包豆大于设置的数量时才会执行红包豆兑换必中符脚本，避免了之前运行脚本由于红包豆太少一直尝试兑换最低的5元必中符导致红包豆攒不起来的bug。 ###
-[![image.png](https://img30.360buyimg.com/pop/jfs/t1/159099/1/28939/362410/61727426E7f6238c1/8a041a5efe9d4b70.png)](https://img30.360buyimg.com/pop/jfs/t1/159099/1/28939/362410/61727426E7f6238c1/8a041a5efe9d4b70.png)
-### action和terminal版本均如图中默认为1800，可无需更改，若满足1800时会去兑换**脚本初始化时设置兑换的必中符**(action默认配置兑换15元必中符)，推荐默认设置兑换15元必中符，即使15被抢完脚本也会自动尝试兑换8元必中符。若需修改，terminal版本修改处如上图所示，aciton 版本在action.yml中修改 
 ###
 # #
 ## 新增token失效告警功能 ##
